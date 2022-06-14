@@ -50,7 +50,7 @@ else {
     console.log('Technical work')
 }
 
-function x(age) {
+function checkAge(age) {
     if (typeof age === 'number' || typeof age === 'string' ) {
         let age_num = Number(age)
         if (age < age_2) {
@@ -73,8 +73,8 @@ function x(age) {
     }
 
 
-const checkAge_17 = x('17')
-const checkAge_18 = x(18)
-const checkAge_61 = x(61)
+const checkAge_17 = checkAge('17')
+const checkAge_18 = checkAge(18)
+const checkAge_61 = checkAge(61)
 
 

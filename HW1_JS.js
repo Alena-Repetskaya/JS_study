@@ -50,31 +50,32 @@ else {
     console.log('Technical work')
 }
 
-function checkAge(age) {
-    if (typeof age === 'number' || typeof age === 'string' ) {
-        let age_num = Number(age)
-        if (age_num < age_2) {
-            console.log('You don`t have access cause your age is ' + age_num + ' It`s less then ' + age_2)
+const checkAge = function (...age) {
+    age.forEach(el => {
+
+    })
+    if (age && !isNaN(age)) {
+        if (age < age_2) {
+            console.log('You don`t have access cause your age is ' + age + ' It`s less then ' + age_2)
             }
-            else if (age_num >=  age_2 & age_num <  age_3) {
+            else if (age >=  age_2 & age <  age_3) {
                 console.log('Welcome!')
             }
-            else if (age_num > age_3) {
+            else if (age > age_3) {
                 console.log('Keep calm and look Culture channel :)')
             }
             else {
                 console.log('Technical work')
         }
     }
-    
-    else {
-    console.log ('Data type isn`t a number')
+    else console.log ('Data type isn`t a number')
 }
-    }
 
 
 const checkAge_17 = checkAge('17')
 const checkAge_18 = checkAge(18)
 const checkAge_61 = checkAge(61)
-
+const checkAge_0 = checkAge(0)
+const checkAge_true = checkAge(true)
+const checkAge_text = checkAge('text')
 
